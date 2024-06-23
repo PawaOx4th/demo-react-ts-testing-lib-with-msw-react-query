@@ -24,7 +24,7 @@ export const fetchPokemonList = async () => {
 	}
 };
 
-const useFetchPokemonList = () => {
+export const useFetchPokemonList = () => {
 	return useQuery({
 		queryKey: ["pokemonList"],
 		queryFn: () => fetchPokemonList(),
